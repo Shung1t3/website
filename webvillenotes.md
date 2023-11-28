@@ -19,7 +19,7 @@ DOM: Document Object Model. This is an important concept that represents a model
 
 The browser loads your page and loads the JavaScript. The Javascript is usually executed after the DOM is loaded.
 
-API can be used through Javascript and are very uyseful tools.
+API can be used through Javascript and are very useful tools.
 
 
 
