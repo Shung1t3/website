@@ -37,5 +37,32 @@ I learned a lot about the differences about HTML4.01 and HTML5. Many simplificat
 I also learned about the Document Object Model, which is the object Javascript operates on. Finally, I learned what Javascript is used for. It is used for enabling APIs on a webpage, creating user interaction,
 making a webpage more responsive, and doing computation.
 </p>
+<main id="song"></main>
+<script>
+    var drink = "Arnold Palmer";
+    var lyrics = "";
+    var cans = 99;
+    while (cans > 0) {
+        lyrics = lyrics + cans + " cans of " 
+                + drink + " on the wall <br>";
+        lyrics = lyrics + cans + " cans of " 
+                + drink + "<br>";
+        lyrics = lyrics + "Take one down, pass it around,<br>";
+        if (cans > 1) {
+            lyrics = lyrics + (cans-1) + " cans of " 
+                + drink + " on the wall <br>";
+        }
+        else {
+            lyrics = lyrics +  "No more cans of " 
+                + drink + " on the wall <br>";
+        }
+        cans = cans - 1;
+    }
+    document.getElementById("song").innerHTML = lyrics;
+
+</script>
 </body>
 </html>
+
+
+
