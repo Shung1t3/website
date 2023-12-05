@@ -8,13 +8,121 @@
 <h1>Chapter 2</h1>
 <h2>Javascript Let Notes</h2>
 <p>
+Let gives variables a scope inside a block, this means they can be used only inside a block
+and cannot be redeclared inside that space. But it can be redeclared outside that space with any value. 
+Same variable in same program without problems. You must declare a let variable before accessing.
 
+Var will always have global scope, which makes it sometimes more useful than let.
 </p>
 
 <h2>Chapter 2 Notes</h2>
 <p>
+Javascript is executed after the page loads.
+
+Javasxript can create variables, loops, make decisions based on data, and more
+
+variables can hold booleans, strings, integers, floating points
+
+to create a variable you need to declare it(using var or let and a name for the variable), and then set its value. 
+Use a semi colon to end a line
+
+You can modify the value by changing it or adding to the current valuse(scoops = scoops +10;)
+
+You need to be particular about variable naming. Don't start them with numbers or symbols that aren't allowed. Use a letter, an underscore, or a dollar strings. After the first character, 
+you can use whatever characters you wish.
+
+Be careful not to use any of Javascript's reserved words. These words cannot be used as varaible names. A list of reserved woirds can be found below these notes.
+
+You can do math, compare numbers, concatenate strings, create arrays, create functions, create elements id.
+
+Javascript will automatically convert between types. For example when multiplyin an integer by a float, or concatenating a number and a string.
+
+you can make while loops with conditions or for loops with conditions(same as C++ loops)
+
+
+If and if else statements can be used to apply logic to a program. Decides between options based on data.
+
+an else statement will catch anything that doesn't meet the conditions of if and if else statements.
+
+You can use an external script or write the code inside a script element. To link a script use the src attribute on a script element and then close the element.
+
+Javascript changes DOM and then website updates dynamically.
+
+document.getElementById("greenplanet"); 
+get an element by id. After that you can modify the element with Javascript. The .innerhtml will allow you to modify the ciontents of the element.
+
+Don't touch the DOM until the page has loaded. If you put your actions into a function, you can use windows.onload to start running the function after the page loads.
+
+You can create, remove and, get elements, and set attributes from Javascript.
+
+You can create an array using new Array() and index that array using []
+
+You can also write a name and add values like this: name[23,47, 66]
+
+To add another item to an array give an index and set it equal. name[3] = 22;
+
+You can reference an array and get the value in an expre3ssion. name[3] + name [4]
+
 
 </p>
+
+
+<h2>Reserved Words</h2>
+<p>
+   abstract
+   as
+   boolean
+   break
+   byte
+   case
+   catch
+   char
+   class
+   continue
+   const
+   debugger
+   default
+   delete
+   do
+   double
+   else
+   enum
+   export
+   extends
+   false
+   final
+   finally
+   float
+   for
+   function
+   goto
+   if
+   implements
+   import
+   in
+   instanceof
+   int
+   interface
+   is
+   long
+   namespace
+   native
+   new
+   null
+   package
+   private
+   protected
+   public
+   return
+   short
+   static
+   super
+   switch
+   synchronized
+   this
+   throw
+</p>
+
 
 <h2>Javascript Code Examples</h1>
 <p>Found in console after pressing inspect</p>
@@ -105,6 +213,75 @@ console.log(message)
 
 value = 2 * 3.1;
 console.log(value)
+
+var scoop = 10;
+
+while(scoop > 0){
+console.log("More Icecream!");
+scoop = scoop -1;
+};
+
+console.log("life without icecream isn't the same")
+
+for(scoops =10; scoops > 0; scoops--){
+   console.log("More Icecream!");
+   scoop = scoop -1;
+}
+
+let count = 0;
+for (let i = 0; i < 5; i++) {
+    count = count + i;
+}
+console.log("count is " + count);
+
+let tops = 5;
+while (tops > 0) {
+    for (let spins = 0; spins < 3; spins++) {
+        console.log("Top is spinning!");
+    }
+    tops = tops - 1;
+}
+
+let p = 8;
+if(p>5){
+console.log("Greater than 5")
+} 
+else if(p<5){
+console.log("Less than 5")
+};
+
+scoops = 10;
+
+while(scoops >= 0){
+   if (scoops == 3) {
+      console.log("Ice cream is running low!");
+   } else if (scoops > 9) {
+      console.log("Eat faster, the ice cream is going to melt!");
+   } else if (scoops == 2) {
+      console.log("Going once!");
+   } else if (scoops == 1) {
+      console.log("Going twice!");
+   } else if (scoops == 0) {
+      console.log("Gone!");
+   } else {
+      console.log("Still lots of ice cream left, come and get it.");
+   }   
+scoops = scoops - 1
+}
+let tempByHour = new array();
+tempByHour[0] = 59.2;
+tempByHour[1] = 60.1;
+tempByHour[2] = 63;
+tempByHour[3] = 65;
+tempByHour[4] = 62;
+
+console,log(tempByHour[1])
+
+let tempByour = [59.2, 60.1, 63, 65, 62];
+
+
+
+
 </script>
 </body>
 </html>
